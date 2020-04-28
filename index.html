@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="locomotive-scroll.css">
     <script src="locomotive-scroll.min.js">document.init()</script>
+    
+    <script>
+      (function () {
+          var scroll = new LocomotiveScroll({
+          el: document.querySelector('[data-scroll-container]'),
+          smooth: true});
+      })();
+    </script>
+    <script nomodule src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js" crossorigin="anonymous"></script>
+    <script nomodule src="https://polyfill.io/v3/polyfill.min.js?features=Object.assign%2CElement.prototype.append%2CNodeList.prototype.forEach%2CCustomEvent%2Csmoothscroll" crossorigin="anonymous"></script>
 
     <title>NASA</title>
   </head>
@@ -91,16 +101,6 @@
     <span class="c-scrollbar">
       <span class="c-scrollbar_thumb"></span>
     </span>
-    
-    <script>
-        (function () {
-            var scroll = new LocomotiveScroll({
-            el: document.querySelector('[data-scroll-container]'),
-            smooth: true});
-        })();
-    </script>
-    <script nomodule src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js" crossorigin="anonymous"></script>
-    <script nomodule src="https://polyfill.io/v3/polyfill.min.js?features=Object.assign%2CElement.prototype.append%2CNodeList.prototype.forEach%2CCustomEvent%2Csmoothscroll" crossorigin="anonymous"></script>
   </body>
   
 </html>
