@@ -43,4 +43,14 @@ header {
 header h1 {
   width: 50px;
 }
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: 2.4em;
+}
 /*# sourceMappingURL=style.css.map */
