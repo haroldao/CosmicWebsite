@@ -1,2 +1,0 @@
-# CosmicWebsite
-Created with CodeSandbox
