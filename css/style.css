@@ -11,7 +11,7 @@ body {
   background-color: #eeeeee;
   font-size: 62.5%;
   line-height: 1.5;
-  padding: 25px 2px;
+  padding: 25px 4px;
 }
 
 @media (min-width: 620px) {
