@@ -4,94 +4,99 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="/css/style.css" href="/locomotive-scroll/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="locomotive-scroll.css">
+
     <title>NASA</title>
   </head>
-  <body>
+  <body data-scroll-container="">
     <header data-scroll-section>
-      <a href="/about.html">About</a>
-      <div>
+      <a data-scroll href="/about.html">About</a>
+      <div data-scroll>
         <img src="/assets/logo.svg" alt="Logo Website" title="Logo Website">
       </div>
-      <a href="https://nasa.gov" target="_blank">nasa.gov</a>
+      <a data-scroll href="https://nasa.gov" target="_blank">nasa.gov</a>
     </header>
 
-    <section data-scroll-container class="photos">
+    <section data-scroll-section class="photos">
 
-      <div data-scroll-section class="photos__photo">
+      <div data-scroll class="photos__photo">
         <img data-scroll src="/assets/image_1.jpg" alt="">
-        <div class="photo__overlay">
+        <div data-scroll class="photo__overlay">
           <h2>moon</h2>
         </div>
       </div>
-      <div data-scroll-section class="photos__photo">
-        <img src="/assets/image_2.jpg" alt="">
-        <div class="photo__overlay">
+      <div data-scroll class="photos__photo">
+        <img data-scroll src="/assets/image_2.jpg" alt="">
+        <div data-scroll  class="photo__overlay">
           <h2>nebula</h2>
         </div>
       </div>
-      <div class="photos__photo">
-        <img src="/assets/image_3.jpg" alt="">
-        <div class="photo__overlay">
+      <div data-scroll class="photos__photo">
+        <img data-scroll  src="/assets/image_3.jpg" alt="">
+        <div data-scroll  class="photo__overlay">
           <h2>tornado</h2>
         </div>
       </div>
-      <div class="photos__photo">
-        <img src="/assets/image_4.jpg" alt="">
-        <div class="photo__overlay">
+      <div data-scroll class="photos__photo">
+        <img data-scroll  src="/assets/image_4.jpg" alt="">
+        <div data-scroll  class="photo__overlay">
           <h2>galaxy</h2>
         </div>
       </div>
-      <div class="photos__photo">
-        <img src="/assets/image_5.jpg" alt="">
-        <div class="photo__overlay">
+      <div data-scroll  class="photos__photo">
+        <img data-scroll  src="/assets/image_5.jpg" alt="">
+        <div data-scroll  class="photo__overlay">
           <h2>city at night</h2>
         </div>
       </div>
-      <div class="photos__photo">
-        <img src="/assets/image_6.jpg" alt="">
-        <div class="photo__overlay">
+      <div data-scroll  class="photos__photo">
+        <img data-scroll  src="/assets/image_6.jpg" alt="">
+        <div data-scroll  class="photo__overlay">
           <h2>cosmic</h2>
         </div>
       </div>
-      <div class="photos__photo">
+      <div data-scroll class="photos__photo">
         <img src="/assets/image_7.jpg" alt="">
         <div class="photo__overlay">
           <h2>earth</h2>
         </div>
       </div>
-      <div class="photos__photo">
-        <img src="/assets/image_8.jpg" alt="">
-        <div class="photo__overlay">
+      <div  data-scroll class="photos__photo">
+        <img data-scroll  src="/assets/image_8.jpg" alt="">
+        <div data-scroll  class="photo__overlay">
           <h2>astronaut</h2>
         </div>
       </div>
-      <div class="photos__photo">
-        <img src="/assets/image_9.jpg" alt="">
-        <div class="photo__overlay">
+      <div data-scroll  class="photos__photo">
+        <img data-scroll  src="/assets/image_9.jpg" alt="">
+        <div data-scroll  class="photo__overlay">
           <h2>international space station</h2></div>
       </div>
-      <div class="photos__photo">
-        <img src="/assets/image_10.jpg" alt="">
-        <div class="photo__overlay">
+      <div data-scroll  class="photos__photo">
+        <img data-scroll  src="/assets/image_10.jpg" alt="">
+        <div data-scroll  class="photo__overlay">
           <h2>aurora borealis</h2>
         </div>
       </div>
 
     </section>
 
-    <footer>
-      <p>
-        <a href="https://unsplash.com/nasa">unsplash.com/nasa</a>
+    <footer data-scroll-section>
+      <p data-scroll>
+        <a data-scroll href="https://unsplash.com/nasa">unsplash.com/nasa</a>
       </p>
     </footer>
-    <script src="./locomotive-scroll/dist/locomotive-scroll.min.js/"></script>
+    <span class="c-scrollbar">
+      <span class="c-scrollbar_thumb"></span>
+    </span>
+    <script src="locomotive-scroll.min.js">document.init()</script>
     <script>
         (function () {
             var scroll = new LocomotiveScroll({
             el: document.querySelector('[data-scroll-container]'),
-            smooth: true})
-            ;})();
+            smooth: true});
+        })();
     </script>
   </body>
   
