@@ -55,6 +55,10 @@ img {
     align-items: center;
 }
 
+main {
+    overflow: hidden;
+}
+
 header {
     @include centerFlex();
     width: 100%;
