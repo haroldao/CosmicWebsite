@@ -155,13 +155,13 @@
     </main>
 
     <script>
-        (function () {
+        window.onload = function () {
             const scroll = new LocomotiveScroll({
                 el: document.querySelector("[data-scroll-container]"),
                 smooth: true,
                 inertia: 0.6,
             });
-        })();
+        }
     </script>
     <script crossorigin="anonymous" nomodule
         src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js"></script>
