@@ -35,13 +35,23 @@ img {
 }
 
 .c-scrollbar {
-    width: 500px;
-    height: 500px;
+    width: 10px;
     overflow: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    transform-origin: center right;
+    transform: scaleX(1);
+    transition: transform .2s linear;
     background-color: var(--background);
 
     .c-scrollbar_thumb {
         background: black;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
     }
 
 }
