@@ -3,12 +3,15 @@ $textcolor : #203a8f;
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 
-*,*::after, *::before{
+*,
+*::after,
+*::before {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: $background;
     font-size: 62.5%;
@@ -16,32 +19,43 @@ body{
     padding: 25px 4px;
     width: 100%;
     height: 90vh;
+
     @media (min-width: 620px) {
-        padding: 50px 40px;        
+        padding: 50px 40px;
     }
 }
-a{
+
+a {
     text-decoration: none;
     color: $textcolor;
     font-weight: 600;
 }
-img{
+
+img {
     max-width: 100%;
     vertical-align: bottom;
 }
-#c-scrollbar{
+
+.c-scrollbar {
     width: 500px;
     height: 500px;
     overflow: auto;
+    background-color: blue;
+
+    .c-scrollbar_thumb {
+        background: white;
+    }
 
 }
+
 @mixin centerFlex () {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
-header{
+
+header {
     @include centerFlex();
     width: 100%;
     padding: 20px 20px;
@@ -49,28 +63,34 @@ header{
     overflow: hidden;
     margin-bottom: 20px;
     z-index: 99999;
-    div{
+
+    div {
         width: 50px;
     }
-    a{
-        &:hover{
+
+    a {
+        &:hover {
             transform: translateY(-5px);
             transition: all .2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
         }
     }
 }
-section{
+
+section {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
-    .photos__photo{
+
+    .photos__photo {
         margin: 5px;
         position: relative;
-        @media (min-width : 620px){
+
+        @media (min-width : 620px) {
             margin: 15px;
-            }
-        .photo__overlay{
-            position: absolute; 
+        }
+
+        .photo__overlay {
+            position: absolute;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -81,7 +101,8 @@ section{
             opacity: 0;
             background-color: rgba($textcolor, $alpha : .8);
             transition: all .2s ease-in-out;
-            h2{
+
+            h2 {
                 text-align: center;
                 color: white;
                 font-size: 2.5rem;
@@ -91,29 +112,32 @@ section{
             }
         }
     }
-    :hover{
-        .photo__overlay{
+
+    :hover {
+        .photo__overlay {
             opacity: 1;
         }
     }
-    img{
-        @media (min-width : 620px){
-        height: 300px;
+
+    img {
+        @media (min-width : 620px) {
+            height: 300px;
         }
     }
 }
 
-footer{
+footer {
     margin-top: 20px;
     display: flex;
     justify-content: flex-end;
     font-size: 1.8em;
-    @media (min-width : 620px){
+
+    @media (min-width : 620px) {
         font-size: 2.4em;
-        }
-    &:hover{
+    }
+
+    &:hover {
         transform: translateY(-5px);
         transition: all .2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
     }
 }
-

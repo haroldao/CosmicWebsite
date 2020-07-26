@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -33,10 +35,15 @@ img {
   vertical-align: bottom;
 }
 
-#c-scrollbar {
+.c-scrollbar {
   width: 500px;
   height: 500px;
   overflow: auto;
+  background-color: blue;
+}
+
+.c-scrollbar .c-scrollbar_thumb {
+  background: white;
 }
 
 header {
