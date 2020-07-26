@@ -17,14 +17,10 @@ body {
     background-color: $background;
     font-size: 62.5%;
     line-height: 1.5;
-    padding: 25px 4px;
     width: 100vw;
     height: 100vh;
     margin: 0;
-
-    @media (min-width: 620px) {
-        padding: 50px 40px;
-    }
+    padding: 0;
 }
 
 a {
