@@ -50,7 +50,7 @@ img {
 }
 
 .c-scrollbar .c-scrollbar_thumb {
-  background: black;
+  background: #203a8f;
   position: absolute;
   top: 0;
   left: 0;
