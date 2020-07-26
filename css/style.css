@@ -32,14 +32,29 @@ img {
 }
 
 .c-scrollbar {
-  width: 500px;
-  height: 500px;
+  width: 10px;
   overflow: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  -webkit-transform-origin: center right;
+          transform-origin: center right;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transition: -webkit-transform .2s linear;
+  transition: -webkit-transform .2s linear;
+  transition: transform .2s linear;
+  transition: transform .2s linear, -webkit-transform .2s linear;
   background-color: var(--background);
 }
 
 .c-scrollbar .c-scrollbar_thumb {
-  background: grey;
+  background: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 main {
