@@ -39,11 +39,11 @@ img {
   width: 500px;
   height: 500px;
   overflow: auto;
-  background-color: blue;
+  background-color: white;
 }
 
 .c-scrollbar .c-scrollbar_thumb {
-  background: white;
+  background: grey;
 }
 
 main {
